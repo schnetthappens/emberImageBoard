@@ -21,13 +21,14 @@ module.exports = function(environment) {
   contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self'",
-      'font-src': "'self'",
+      'font-src': "'self' fonts.gstatic.com",
       'connect-src': "'self' api.parse.com",
-      'img-src': "'self' placekitten.com.s3.amazonaws.com",
+      'img-src': "'self'",
       'style-src': "'self'",
       'media-src': "'self'"
     }
   };
+  
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

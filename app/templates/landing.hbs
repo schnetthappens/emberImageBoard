@@ -1,0 +1,12 @@
+
+{{#paper-button raised=true classNames="md-primary"}}Log in with Facebook{{/paper-button}}
+
+{{#link-to 'users.create'}}
+  {{#paper-button raised-=true classNames="md-primary"}}Sign up with email{{/paper-button}}
+{{/link-to}}
+
+{{#link-to 'sessions.create'}}
+  <p>Already have an account?</p>
+{{#link-to}}
+
+{{outlet}}
