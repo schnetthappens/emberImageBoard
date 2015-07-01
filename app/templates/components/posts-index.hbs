@@ -1,7 +1,9 @@
 
-{{#each posts as |post|}}
+{{#each model as |post|}}
   <li class="post">
     <h1><a href="{{post.url}}">{{post.title}}</a></h1>
     <img src="http://placekitten.com/g/200/300" alt="">
   </li>
 {{/each}}
+
+{{link-to 'Create' 'posts.create'}}
