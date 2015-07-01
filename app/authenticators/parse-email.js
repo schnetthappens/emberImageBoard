@@ -22,6 +22,7 @@ ParseAuthenticator = Base.extend({
         sessionToken: user.get('sessionToken')
       };
       return data;
+
     });
   },
 
@@ -30,7 +31,7 @@ ParseAuthenticator = Base.extend({
     if (data == null) {
       data = {};
     }
-    store = this.container.lookup('store:main');
+    store = this.container.lookup('service:store');
     adapter = store.adapterFor('application');
     user = data.user;
     if (user) {
