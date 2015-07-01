@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('posts', function() {
     this.route('create');
+    this.route('show', {path: '/post:_id'});
   });
 });
 

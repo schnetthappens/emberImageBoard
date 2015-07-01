@@ -1,9 +1,16 @@
+<ul class="posts-list">
 
-{{#each model as |post|}}
-  <li class="post">
-    <h1><a href="{{post.url}}">{{post.title}}</a></h1>
-    <img src="http://placekitten.com/g/200/300" alt="">
-  </li>
-{{/each}}
+  {{#each model as |post|}}
+    <li class="post">
+
+      {{#link-to 'posts.show'}}
+        <img src="{{post.url}}" alt="" />
+      {{/link-to}}
+
+      <p>{{post.caption}}</p>
+    </li>
+  {{/each}}
+
+</ul>
 
 {{link-to 'Create' 'posts.create'}}
