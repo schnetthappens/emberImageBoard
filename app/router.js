@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('create');
     this.route('show', {path: '/:post_id'});
   });
+  this.route('landing');
 });
 
 export default Router;
