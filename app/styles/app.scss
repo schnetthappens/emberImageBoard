@@ -1,0 +1,89 @@
+$box-sizing: true;
+$gutter: 0em;
+
+@import "bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
+
+
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.posts-container {
+  @include outer-container(1080px);
+  height: auto;
+  background-color: #E0E1E2;
+  border: 1px solid #aaa9a9;
+}
+
+.create-image {
+  display: block;
+  width: 100%;
+  /* position: fixed; */
+  background-color: #4D6F99;
+  padding: 20px;
+}
+
+  .create-image>a{
+    font-family: helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+  }
+
+  .posts-list {
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+    .post {
+      max-width: 80%;
+      height: auto;
+      margin: 20px auto;
+      margin-bottom: 5em;
+      border-right: 1px solid #bfbebe;
+      border-radius: 2px;
+      background-color: white;
+      list-style: none;
+      box-shadow: 0px 0px 4px #bfbebe;
+    }
+
+      .post-image {
+        width: 100%;
+      }
+
+    .caption-container {
+      height: 50px;
+    }
+
+      .post-caption {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.3em;
+        font-weight: lighter;
+        margin-left: 1em;
+      }
+
+//Posts-show
+
+.post-show-container{
+  margin: 50px auto;
+  width: 500px;
+  background-color: white;
+  box-shadow: 0px 0px 4px #bfbebe;
+  border-radius: 2px;
+}
+
+    .post-show img{
+      width: 100%;
+    }
+
+    .post-show-caption{
+      font-family: helvetica, sans-serif;
+      font-size: 1em;
+      font-weight: lighter;
+      margin: 0;
+      padding: 15px;
+    }
